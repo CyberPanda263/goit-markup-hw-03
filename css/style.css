@@ -5,21 +5,39 @@ body {
     font-size: 16px;
 }
 
-body a {
-    text-decoration: none;
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
 }
 
-body ul {
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
     list-style: none;
 }
 
-.preview_title {
-    font-weight: 700;
-    font-size: 56px;
-    letter-spacing: 1.12px;
-    line-height: 1.07;
-    text-align: center
+img {
+    display: block;
 }
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 120px 0 120px 0;
+}
+
+.container { 
+    width: 1158px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 156px;
+    margin-right: 156px;
+    }
 
 .advantages_title, .team_title, .portfolio_title {
     color: #2E2F42;
@@ -31,7 +49,7 @@ body ul {
     line-height: 1.11;
 }
 
-.item_title {
+.item_title, .portfolio_list_title {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
@@ -45,6 +63,14 @@ body ul {
 }
 
 /* Header */
+
+.header {
+    display: flex;
+}
+
+.header_nav {
+    display: flex;
+}
 
 .logo {
     color: #4d5ae5;
@@ -64,21 +90,35 @@ body ul {
     color: #2E2F42;
 }
 
+.header_menu {
+    margin-left: 76px;
+}
+
 .header_menu_item {
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
 }
 
 .header_contact a {
     color: #434455;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
 
 .header_contact {
+    margin-left: 332px;
+}
+
+.header_menu, .header_contact_list {
     font-style: normal;
+    display: flex;
+    gap: 40px;
+}
+
+.header_nav, .header_contact {
+    padding: 25.5px 0 25.5px 0;
 }
 
 .header_menu a:hover, .header_menu a:focus, .header_contact a:hover, .header_contact a:focus {
@@ -90,6 +130,19 @@ body ul {
 .preview {
     background-color: #2E2F42;
     color: #FFF;
+    padding: 0;
+}
+
+.preview_block {
+    padding: 60px 316px 180px 316px;
+}
+
+.preview_title {
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: 1.12px;
+    line-height: 1.07;
+    text-align: center
 }
 
 .preview_button {
@@ -99,6 +152,9 @@ body ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin: 48px 0 0 164px;
+    padding: 15px 32px 15px 32px;
+    border-radius: 4px;
 }
 
 .preview_button:hover, .preview_button:focus {
@@ -107,22 +163,78 @@ body ul {
 }
 /*advantages section*/
 
+.advantages_title {
+    display: none;
+}
+
+.advantages_list, .team_list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.advantages_item {
+    flex-basis: calc((100% - 72px) / 4);
+}
+
+.item_title {
+    margin-bottom: 8px;
+}
+
 /*team section*/
 
 .team {
     background-color: #F4F4FD;
 }
+
+.team_title {
+    margin-bottom: 72px;
+}
+
 .team_list_item {
+    flex-basis: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
+    text-align: center;
 }
 
 .item_content {
-    font-size: 16px
+    font-size: 16px;
+    margin-bottom: 32px;
 }
+
+.item_title {
+    margin-top: 32px;
+}
+
 /*portfolio section*/
+
+.portfolio_title {
+    margin-bottom: 72px;
+}
+
+.portfolio_list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio_list_title {
+    margin: 32px 16px 8px 16px;
+}
+
+.portfolio_item_content {
+    margin: 0 16px 32px 16px;
+}
+
+.portfolio_item {
+    flex-basis: calc((100% - 96px) / 6);
+}
 
 /*footer section*/
 .footer, .footer .logo_first_word {
     background-color: #2E2F42;
     color: #F4F4FD;
+}
+
+.footer_content_block {
+    padding: 100px 0 101.5px 0;
 }
