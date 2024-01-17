@@ -1,0 +1,128 @@
+body {
+    background-color: #FFFFFF;
+    color: #434455;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body a {
+    text-decoration: none;
+}
+
+body ul {
+    list-style: none;
+}
+
+.preview_title {
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: 1.12px;
+    line-height: 1.07;
+    text-align: center
+}
+
+.advantages_title, .team_title, .portfolio_title {
+    color: #2E2F42;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.72px;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 1.11;
+}
+
+.item_title {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+}
+
+.item_content, .footer_content {
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+/* Header */
+
+.logo {
+    color: #4d5ae5;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase
+}
+
+.logo a {
+    color: #4d5ae5;
+}
+
+.logo_first_word, .header_menu a {
+    color: #2E2F42;
+}
+
+.header_menu_item {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em
+}
+
+.header_contact a {
+    color: #434455;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+.header_contact {
+    font-style: normal;
+}
+
+.header_menu a:hover, .header_menu a:focus, .header_contact a:hover, .header_contact a:focus {
+    color: #404BBF;
+}
+
+/*preview section*/
+
+.preview {
+    background-color: #2E2F42;
+    color: #FFF;
+}
+
+.preview_button {
+    background-color: #4D5AE5;
+    color: #FFF;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.preview_button:hover, .preview_button:focus {
+    background-color: #404BBF;
+    cursor: pointer;
+}
+/*advantages section*/
+
+/*team section*/
+
+.team {
+    background-color: #F4F4FD;
+}
+.team_list_item {
+    background-color: #FFFFFF;
+}
+
+.item_content {
+    font-size: 16px
+}
+/*portfolio section*/
+
+/*footer section*/
+.footer, .footer .logo_first_word {
+    background-color: #2E2F42;
+    color: #F4F4FD;
+}
