@@ -69,7 +69,7 @@ section:not(:first-child) {
 
 /* Header */
 
-Header_block {
+.Header_block {
     border-bottom: 1px solid #e7e9fc;
 }
 
@@ -180,9 +180,18 @@ Header_block {
 }
 /*advantages section*/
 
-.advantages_title {
-    visibility: hidden;
-}
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+  }
 
 .advantages_list, .team_list {
     display: flex;
