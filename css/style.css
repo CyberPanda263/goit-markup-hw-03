@@ -69,7 +69,7 @@ section:not(:first-child) {
 
 /* Header */
 
-.Header_block {
+.header_block {
     border-bottom: 1px solid #e7e9fc;
 }
 
@@ -115,6 +115,10 @@ section:not(:first-child) {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0 24px;
+}
+
+.link {
+    padding: 24px 0 24px; /*It won't work without display: block; ))))*/
 }
 
 .header_contact a {
